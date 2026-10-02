@@ -1,5 +1,5 @@
 plugins {
-	kotlin("jvm") version "2.0.20"
+	kotlin("jvm") version "2.1.0"
 }
 
 repositories {
@@ -17,8 +17,8 @@ repositories {
 }
 
 dependencies {
-	implementation("org.jetbrains.kotlin:kotlin-stdlib:2.0.20")
-    compileOnly("io.papermc.paper:paper-api:1.20.6-R0.1-SNAPSHOT")
+	implementation("org.jetbrains.kotlin:kotlin-stdlib:2.1.0")
+    compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
 	// compileOnly("me.clip:placeholderapi:2.11.5")
     // compileOnly("us.dynmap:dynmap-api:3.4-beta-3")
     // compileOnly("us.dynmap:DynmapCoreAPI:3.4")

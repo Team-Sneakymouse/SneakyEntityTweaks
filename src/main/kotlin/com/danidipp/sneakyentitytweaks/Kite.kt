@@ -31,7 +31,7 @@ class Kite : Listener {
         if (rodItem.type != Material.FISHING_ROD)
             return
         val rodMeta = rodItem.itemMeta
-        if (!rodMeta.hasCustomModelData() || rodMeta.customModelData < 1)
+        if (!rodMeta.hasCustomModelData() || rodMeta.customModelData < 1 || rodMeta.customModelData > 100)
             return
 
         hook.scoreboardTags.add("lom:kite")
