@@ -88,6 +88,7 @@ publishing {
 				name.set("SneakyEntityTweaks")
 				description.set("Adjustments for entity default behaviors in a roleplay environment.")
 				url.set("https://github.com/Team-Sneakymouse/SneakyEntityTweaks")
+				properties.put("sneakyrp.deployment.type", "paper-plugin")
 				scm {
 					url.set("https://github.com/Team-Sneakymouse/SneakyEntityTweaks")
 					connection.set("scm:git:https://github.com/Team-Sneakymouse/SneakyEntityTweaks.git")
