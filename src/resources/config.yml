@@ -1,0 +1,46 @@
+# Fishing rods that fly a kite when cast. Only rods listed here turn into a kite.
+# Each key is the rod's magic-item id (magicspells:magicitem). A rod matches when
+# that id matches, else when its item_model equals rod-model, else (old copies
+# that predate the item_model cutover) when its integer custom model data equals legacy-cmd.
+# kite-model is the item_model of the clay_ball the kite (an invisible allay) holds.
+kites:
+  toy-kite-red:
+    rod-model: "lom:legacy/fishing_rod/33"
+    legacy-cmd: 33
+    kite-model: "lom:entities/kites/kite_old"
+  toy-kite-black:
+    rod-model: "lom:legacy/fishing_rod/37"
+    legacy-cmd: 37
+    kite-model: "lom:entities/kites/kite_black"
+  toy-kite-blue:
+    rod-model: "lom:legacy/fishing_rod/38"
+    legacy-cmd: 38
+    kite-model: "lom:entities/kites/kite_blue"
+  toy-kite-gold:
+    rod-model: "lom:legacy/fishing_rod/39"
+    legacy-cmd: 39
+    kite-model: "lom:entities/kites/kite_gold"
+  toy-kite-green:
+    rod-model: "lom:legacy/fishing_rod/40"
+    legacy-cmd: 40
+    kite-model: "lom:entities/kites/kite_green"
+  toy-kite-pink:
+    rod-model: "lom:legacy/fishing_rod/41"
+    legacy-cmd: 41
+    kite-model: "lom:entities/kites/kite_pink"
+  toy-kite-paladin:
+    rod-model: "lom:legacy/fishing_rod/42"
+    legacy-cmd: 42
+    kite-model: "lom:entities/kites/kite_redankh"
+  toy-kite-jolly:
+    rod-model: "lom:legacy/fishing_rod/43"
+    legacy-cmd: 43
+    kite-model: "lom:entities/kites/kite_redtree"
+  toy-kite-holy:
+    rod-model: "lom:legacy/fishing_rod/44"
+    legacy-cmd: 44
+    kite-model: "lom:entities/kites/kite_whiteankh"
+  toy-kite-festive:
+    rod-model: "lom:legacy/fishing_rod/45"
+    legacy-cmd: 45
+    kite-model: "lom:entities/kites/kite_whitetree"

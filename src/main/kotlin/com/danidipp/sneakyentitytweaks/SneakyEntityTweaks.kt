@@ -12,7 +12,10 @@ class SneakyEntityTweaks : JavaPlugin() {
         server.pluginManager.registerEvents(Silverfish(), this)
         server.pluginManager.registerEvents(Chicken(), this)
 
-        server.pluginManager.registerEvents(Kite(), this)
+        val kitesSection = config.getConfigurationSection("kites")
+            ?.takeIf { it.getKeys(false).isNotEmpty() }
+            ?: config.defaults?.getConfigurationSection("kites")
+        server.pluginManager.registerEvents(Kite(kitesSection), this)
     }
 
     companion object {
