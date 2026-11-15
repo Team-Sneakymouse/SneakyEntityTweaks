@@ -43,12 +43,13 @@ class Kite(config: ConfigurationSection?) : Listener {
             rodModel?.let { byRodModel[it] = rod }
             legacyCmd?.let { byLegacyCmd[it] = rod }
         }
+        logger.info("Loaded ${byMagicItem.size} kite rod(s) from config")
     }
 
     /** Magic-item id first, then item_model, then legacy integer CMD for copies from before the item_model cutover. */
     private fun kiteRodFor(meta: ItemMeta): KiteRod? {
         meta.persistentDataContainer.get(MAGIC_ITEM_KEY, PersistentDataType.STRING)?.let { id ->
-            byMagicItem[id]?.let { return it }
+            return byMagicItem[id]
         }
         if (meta.hasItemModel()) {
             byRodModel[meta.itemModel]?.let { return it }
